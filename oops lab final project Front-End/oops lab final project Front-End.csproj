@@ -46,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="confirmnewpasswordpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="confirmnewpasswordpage.Designer.cs">
+      <DependentUpon>confirmnewpasswordpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forgotpasswordpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forgotpasswordpage.Designer.cs">
+      <DependentUpon>Forgotpasswordpage.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,8 +78,18 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="TempDatabase.cs" />
+    <EmbeddedResource Include="confirmnewpasswordpage.resx">
+      <DependentUpon>confirmnewpasswordpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forgotpasswordpage.resx">
+      <DependentUpon>Forgotpasswordpage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainDashboard.resx">
+      <DependentUpon>MainDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -106,6 +128,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\resigister page 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forgot password page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\confrim new password page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidepanel.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

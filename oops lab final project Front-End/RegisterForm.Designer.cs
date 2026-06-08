@@ -49,6 +49,7 @@ namespace oops_lab_final_project_Front_End
             this.writeusername = new System.Windows.Forms.TextBox();
             this.writenewpassword = new System.Windows.Forms.TextBox();
             this.textconfirmpassword = new System.Windows.Forms.TextBox();
+            this.btnsignup = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtregisteryouracc
@@ -238,12 +239,24 @@ namespace oops_lab_final_project_Front_End
             this.textconfirmpassword.Size = new System.Drawing.Size(100, 20);
             this.textconfirmpassword.TabIndex = 19;
             // 
+            // btnsignup
+            // 
+            this.btnsignup.BackColor = System.Drawing.Color.Transparent;
+            this.btnsignup.Location = new System.Drawing.Point(616, 275);
+            this.btnsignup.Name = "btnsignup";
+            this.btnsignup.Size = new System.Drawing.Size(75, 23);
+            this.btnsignup.TabIndex = 20;
+            this.btnsignup.Text = "Sign Up";
+            this.btnsignup.UseVisualStyleBackColor = false;
+            this.btnsignup.Click += new System.EventHandler(this.btnsignup_Click);
+            // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.register_page;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnsignup);
             this.Controls.Add(this.textconfirmpassword);
             this.Controls.Add(this.writenewpassword);
             this.Controls.Add(this.writeusername);
@@ -293,5 +306,6 @@ namespace oops_lab_final_project_Front_End
         private System.Windows.Forms.TextBox writeusername;
         private System.Windows.Forms.TextBox writenewpassword;
         private System.Windows.Forms.TextBox textconfirmpassword;
+        private System.Windows.Forms.Button btnsignup;
     }
 }

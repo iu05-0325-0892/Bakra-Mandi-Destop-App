@@ -63,6 +63,26 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap confrim_new_password_page {
+            get {
+                object obj = ResourceManager.GetObject("confrim new password page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap forgot_password_page {
+            get {
+                object obj = ResourceManager.GetObject("forgot password page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap login_page_2 {
             get {
                 object obj = ResourceManager.GetObject("login page 2", resourceCulture);
@@ -96,6 +116,16 @@ namespace oops_lab_final_project_Front_End.Properties {
         internal static System.Drawing.Bitmap resigister_page_2 {
             get {
                 object obj = ResourceManager.GetObject("resigister page 2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidepanel {
+            get {
+                object obj = ResourceManager.GetObject("sidepanel", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -17,54 +17,61 @@ namespace oops_lab_final_project_Front_End
             InitializeComponent();
         }
 
-        private void txtloginpage_Click(object sender, EventArgs e)
+        // This is your main Login button
+        private void btnloginin_Click(object sender, EventArgs e)
         {
+            // 1. Grab what the user typed in and use .Trim() to kill invisible spaces!
+            string inputUsername = lblUsername.Text.Trim();
+            string inputPassword = lblPassword.Text.Trim();
 
+            bool loginSuccess = false;
+            string userRole = "";
+
+            // 2. Search our temporary database for a match
+            foreach (User u in TempDatabase.Users)
+            {
+                if (u.Username == inputUsername && u.Password == inputPassword)
+                {
+                    loginSuccess = true;
+                    userRole = u.Role; // Grab whether they are a Buyer or Seller
+                    break; // Stop searching, we found them!
+                }
+            }
+
+            // 3. Decide what to do
+            if (loginSuccess == true)
+            {
+                // Pass the correct role to the Dashboard
+                MainDashboard mainPage = new MainDashboard(userRole);
+                mainPage.Show();
+                this.Hide();
+            }
+            else
+            {
+                // Pop up an error if they typed the wrong password
+                MessageBox.Show("Invalid Username or Password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
-        private void buttonCreateAccount_Click(object sender, EventArgs e)
-        {
-            
-            RegisterForm regPage = new RegisterForm();
-
-           
-            regPage.Show();
-
-            
-            this.Hide();
-        }
-
-        private void buttonLogin_Click(object sender, EventArgs e)
-        {
-         
-           
-        }
-
-        private void btncreateac_Click(object sender, EventArgs e)
-        {
-           
-            RegisterForm regPage = new RegisterForm();
-
-            
-            regPage.Show();
-
-           
-            this.Hide();
-        }
-
-        
-        RegisterForm regPage = new RegisterForm();
-
+        // This is your Create Account button
         private void btncreatenewacc_Click(object sender, EventArgs e)
         {
-          
             RegisterForm regPage = new RegisterForm();
-
-          
             regPage.Show();
-
-         
             this.Hide();
+        }
+
+        // This is your Forgot Password button
+        private void btnforgotpassword_Click(object sender, EventArgs e)
+        {
+            Forgotpasswordpage forgotPage = new Forgotpasswordpage();
+            forgotPage.Show();
+            this.Hide();
+        }
+
+        private void txtusername_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -30,10 +30,10 @@ namespace oops_lab_final_project_Front_End
         private void InitializeComponent()
         {
             this.txtloginpage = new System.Windows.Forms.Label();
-            this.writeusername = new System.Windows.Forms.TextBox();
-            this.txtusername = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.Label();
-            this.writepassword = new System.Windows.Forms.TextBox();
+            this.txtusername = new System.Windows.Forms.TextBox();
+            this.lblUsername = new System.Windows.Forms.Label();
+            this.lblPassword = new System.Windows.Forms.Label();
+            this.txtpassword = new System.Windows.Forms.TextBox();
             this.btnforgotpassword = new System.Windows.Forms.Button();
             this.btnloginin = new System.Windows.Forms.Button();
             this.btncreatenewacc = new System.Windows.Forms.Button();
@@ -50,44 +50,44 @@ namespace oops_lab_final_project_Front_End
             this.txtloginpage.Size = new System.Drawing.Size(180, 35);
             this.txtloginpage.TabIndex = 0;
             this.txtloginpage.Text = "Login Page";
-            this.txtloginpage.Click += new System.EventHandler(this.txtloginpage_Click);
-            // 
-            // writeusername
-            // 
-            this.writeusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.writeusername.Location = new System.Drawing.Point(385, 161);
-            this.writeusername.Name = "writeusername";
-            this.writeusername.Size = new System.Drawing.Size(100, 20);
-            this.writeusername.TabIndex = 1;
             // 
             // txtusername
             // 
-            this.txtusername.AutoSize = true;
-            this.txtusername.BackColor = System.Drawing.Color.Transparent;
-            this.txtusername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtusername.Location = new System.Drawing.Point(272, 161);
+            this.txtusername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtusername.Location = new System.Drawing.Point(385, 161);
             this.txtusername.Name = "txtusername";
-            this.txtusername.Size = new System.Drawing.Size(93, 17);
-            this.txtusername.TabIndex = 2;
-            this.txtusername.Text = "User Name:";
+            this.txtusername.Size = new System.Drawing.Size(100, 20);
+            this.txtusername.TabIndex = 1;
+            // 
+            // lblUsername
+            // 
+            this.lblUsername.AutoSize = true;
+            this.lblUsername.BackColor = System.Drawing.Color.Transparent;
+            this.lblUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Location = new System.Drawing.Point(272, 161);
+            this.lblUsername.Name = "lblUsername";
+            this.lblUsername.Size = new System.Drawing.Size(93, 17);
+            this.lblUsername.TabIndex = 2;
+            this.lblUsername.Text = "User Name:";
+            this.lblUsername.Click += new System.EventHandler(this.txtusername_Click);
+            // 
+            // lblPassword
+            // 
+            this.lblPassword.AutoSize = true;
+            this.lblPassword.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassword.Location = new System.Drawing.Point(284, 201);
+            this.lblPassword.Name = "lblPassword";
+            this.lblPassword.Size = new System.Drawing.Size(81, 17);
+            this.lblPassword.TabIndex = 3;
+            this.lblPassword.Text = "password:";
             // 
             // txtpassword
             // 
-            this.txtpassword.AutoSize = true;
-            this.txtpassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtpassword.Location = new System.Drawing.Point(284, 201);
+            this.txtpassword.Location = new System.Drawing.Point(385, 201);
             this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(81, 17);
-            this.txtpassword.TabIndex = 3;
-            this.txtpassword.Text = "password:";
-            // 
-            // writepassword
-            // 
-            this.writepassword.Location = new System.Drawing.Point(385, 201);
-            this.writepassword.Name = "writepassword";
-            this.writepassword.Size = new System.Drawing.Size(100, 20);
-            this.writepassword.TabIndex = 4;
+            this.txtpassword.Size = new System.Drawing.Size(100, 20);
+            this.txtpassword.TabIndex = 4;
             // 
             // btnforgotpassword
             // 
@@ -98,6 +98,7 @@ namespace oops_lab_final_project_Front_End
             this.btnforgotpassword.TabIndex = 5;
             this.btnforgotpassword.Text = "Fortgot Password";
             this.btnforgotpassword.UseVisualStyleBackColor = false;
+            this.btnforgotpassword.Click += new System.EventHandler(this.btnforgotpassword_Click);
             // 
             // btnloginin
             // 
@@ -109,6 +110,7 @@ namespace oops_lab_final_project_Front_End
             this.btnloginin.TabIndex = 6;
             this.btnloginin.Text = "Login In";
             this.btnloginin.UseVisualStyleBackColor = false;
+            this.btnloginin.Click += new System.EventHandler(this.btnloginin_Click);
             // 
             // btncreatenewacc
             // 
@@ -130,10 +132,10 @@ namespace oops_lab_final_project_Front_End
             this.Controls.Add(this.btncreatenewacc);
             this.Controls.Add(this.btnloginin);
             this.Controls.Add(this.btnforgotpassword);
-            this.Controls.Add(this.writepassword);
             this.Controls.Add(this.txtpassword);
+            this.Controls.Add(this.lblPassword);
+            this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtusername);
-            this.Controls.Add(this.writeusername);
             this.Controls.Add(this.txtloginpage);
             this.Name = "loginpage";
             this.Text = "Login Page";
@@ -145,10 +147,10 @@ namespace oops_lab_final_project_Front_End
         #endregion
 
         private System.Windows.Forms.Label txtloginpage;
-        private System.Windows.Forms.TextBox writeusername;
-        private System.Windows.Forms.Label txtusername;
-        private System.Windows.Forms.Label txtpassword;
-        private System.Windows.Forms.TextBox writepassword;
+        private System.Windows.Forms.TextBox txtusername;
+        private System.Windows.Forms.Label lblUsername;
+        private System.Windows.Forms.Label lblPassword;
+        private System.Windows.Forms.TextBox txtpassword;
         private System.Windows.Forms.Button btnforgotpassword;
         private System.Windows.Forms.Button btnloginin;
         private System.Windows.Forms.Button btncreatenewacc;

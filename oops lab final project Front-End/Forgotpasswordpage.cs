@@ -10,33 +10,22 @@ using System.Windows.Forms;
 
 namespace oops_lab_final_project_Front_End
 {
-    public partial class RegisterForm : Form
+    public partial class Forgotpasswordpage : Form
     {
-        public RegisterForm()
+        public Forgotpasswordpage()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btnsignup_Click(object sender, EventArgs e)
-        {
-
             
-            loginpage loginPage = new loginpage();
-
-            
-            loginPage.Show();
+            confirmnewpasswordpage confirmPage = new confirmnewpasswordpage();
 
            
+            confirmPage.Show();
+
+            
             this.Hide();
         }
     }
