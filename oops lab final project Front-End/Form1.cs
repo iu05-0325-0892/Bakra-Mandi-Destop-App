@@ -20,9 +20,9 @@ namespace oops_lab_final_project_Front_End
         // This is your main Login button
         private void btnloginin_Click(object sender, EventArgs e)
         {
-            // 1. Grab what the user typed in and use .Trim() to kill invisible spaces!
-            string inputUsername = lblUsername.Text.Trim();
-            string inputPassword = lblPassword.Text.Trim();
+            
+            string inputUsername = txtusername.Text.Trim();
+            string inputPassword = txtpassword.Text.Trim();
 
             bool loginSuccess = false;
             string userRole = "";
