@@ -64,11 +64,23 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="inboxsidepanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inboxsidepanel.Designer.cs">
+      <DependentUpon>inboxsidepanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MainDashboard.Designer.cs">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="marketplacesidepanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketplacesidepanel.Designer.cs">
+      <DependentUpon>marketplacesidepanel.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -87,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inboxsidepanel.resx">
+      <DependentUpon>inboxsidepanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
@@ -137,6 +152,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\sidepanel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-box.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-box png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send-button.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

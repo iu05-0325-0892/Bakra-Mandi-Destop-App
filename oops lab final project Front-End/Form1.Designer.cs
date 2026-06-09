@@ -50,6 +50,7 @@ namespace oops_lab_final_project_Front_End
             this.txtloginpage.Size = new System.Drawing.Size(180, 35);
             this.txtloginpage.TabIndex = 0;
             this.txtloginpage.Text = "Login Page";
+            this.txtloginpage.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txtusername
             // 
@@ -69,6 +70,7 @@ namespace oops_lab_final_project_Front_End
             this.lblUsername.Size = new System.Drawing.Size(93, 17);
             this.lblUsername.TabIndex = 2;
             this.lblUsername.Text = "User Name:";
+            this.lblUsername.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblUsername.Click += new System.EventHandler(this.txtusername_Click);
             // 
             // lblPassword
@@ -81,6 +83,7 @@ namespace oops_lab_final_project_Front_End
             this.lblPassword.Size = new System.Drawing.Size(81, 17);
             this.lblPassword.TabIndex = 3;
             this.lblPassword.Text = "password:";
+            this.lblPassword.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // txtpassword
             // 
@@ -128,7 +131,8 @@ namespace oops_lab_final_project_Front_End
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.resigister_page_2;
-            this.ClientSize = new System.Drawing.Size(846, 450);
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(652, 450);
             this.Controls.Add(this.btncreatenewacc);
             this.Controls.Add(this.btnloginin);
             this.Controls.Add(this.btnforgotpassword);
@@ -137,6 +141,7 @@ namespace oops_lab_final_project_Front_End
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.txtusername);
             this.Controls.Add(this.txtloginpage);
+            this.DoubleBuffered = true;
             this.Name = "loginpage";
             this.Text = "Login Page";
             this.ResumeLayout(false);

@@ -35,6 +35,54 @@ namespace oops_lab_final_project_Front_End
         private void MainDashboard_Load(object sender, EventArgs e)
         {
 
+            btnmarketplace.Visible = false;
+            btnManageInventory.Visible = false;
+            btnviewsales.Visible = false;
+            btnorderhistory.Visible = false;
+
+            if (currentUserRole == "Seller")
+            {
+
+                btnManageInventory.Visible = true;
+                btnviewsales.Visible = true;
+            }
+            else if (currentUserRole == "Buyer")
+            {
+
+                btnmarketplace.Visible = true;
+                btnorderhistory.Visible = true;
+            }
+
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+
+            loginpage loginPage = new loginpage();
+
+
+            loginPage.Show();
+
+
+            this.Hide();
+        }
+
+        private void btnInbox_Click(object sender, EventArgs e)
+        {
+
+            inboxsidepanel myInbox = new inboxsidepanel();
+
+            myInbox.Show();
+           
+           
+        }
+
+        private void btninbox_Click_1(object sender, EventArgs e)
+        {
+           
+            inboxsidepanel myInbox = new inboxsidepanel();
+            myInbox.Show();
         }
     }
 }
+
