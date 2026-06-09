@@ -17,27 +17,36 @@ namespace oops_lab_final_project_Front_End
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
+        // Yahan 'object' daal kar error fix kar diya hai
         private void btnsignup_Click(object sender, EventArgs e)
         {
+            string uName = txtusername.Text.Trim();
+            string pass = writenewpassword.Text.Trim();
+            string selectedRole = "Buyer";
 
-            
-            loginpage loginPage = new loginpage();
+            if (string.IsNullOrEmpty(uName) || string.IsNullOrEmpty(pass))
+            {
+                MessageBox.Show("Please fill the fields!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
-            
-            loginPage.Show();
+            User newAccount = new User();
+            newAccount.Username = uName;
+            newAccount.Password = pass;
+            newAccount.Role = selectedRole;
 
-           
+            TempDatabase.Users.Add(newAccount);
+
+            MessageBox.Show("Registration Successful! Now you can Login.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            loginpage login = new loginpage();
+            login.Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e) { }
+        private void button1_Click(object sender, EventArgs e) { }
+        private void writefirstname_TextChanged(object sender, EventArgs e) { }
+        private void RegisterForm_Load(object sender, EventArgs e) { }
     }
 }
