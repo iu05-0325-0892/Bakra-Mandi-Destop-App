@@ -29,12 +29,53 @@ namespace oops_lab_final_project_Front_End
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.btnadd = new System.Windows.Forms.Button();
+            this.btnremove = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // btnadd
+            // 
+            this.btnadd.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnadd.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnadd.Location = new System.Drawing.Point(0, 427);
+            this.btnadd.Name = "btnadd";
+            this.btnadd.Size = new System.Drawing.Size(710, 23);
+            this.btnadd.TabIndex = 0;
+            this.btnadd.Text = "add animal";
+            this.btnadd.UseVisualStyleBackColor = true;
+            this.btnadd.Click += new System.EventHandler(this.btnadd_Click);
+            // 
+            // btnremove
+            // 
+            this.btnremove.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnremove.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnremove.Location = new System.Drawing.Point(0, 398);
+            this.btnremove.Name = "btnremove";
+            this.btnremove.Size = new System.Drawing.Size(710, 29);
+            this.btnremove.TabIndex = 1;
+            this.btnremove.Text = "remove animal";
+            this.btnremove.UseVisualStyleBackColor = true;
+            this.btnremove.Click += new System.EventHandler(this.btnremove_Click);
+            // 
+            // marketplacesidepanel
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.AutoSize = true;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.goat_marketplace;
+            this.ClientSize = new System.Drawing.Size(710, 450);
+            this.Controls.Add(this.btnremove);
+            this.Controls.Add(this.btnadd);
+            this.Name = "marketplacesidepanel";
             this.Text = "marketplacesidepanel";
+            this.Load += new System.EventHandler(this.marketplacesidepanel_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnadd;
+        private System.Windows.Forms.Button btnremove;
     }
 }

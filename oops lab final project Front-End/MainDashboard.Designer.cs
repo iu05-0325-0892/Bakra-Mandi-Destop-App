@@ -29,6 +29,7 @@ namespace oops_lab_final_project_Front_End
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnsell = new System.Windows.Forms.Button();
             this.maindashboardsidepanel = new System.Windows.Forms.Panel();
             this.btnsplogout = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -38,8 +39,22 @@ namespace oops_lab_final_project_Front_End
             this.btninbox = new System.Windows.Forms.Button();
             this.btnmarketplace = new System.Windows.Forms.Button();
             this.btnsphome = new System.Windows.Forms.Button();
+            this.bakraListingCard1 = new oops_lab_final_project_Front_End.bakraListingCard();
             this.maindashboardsidepanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnsell
+            // 
+            this.btnsell.BackColor = System.Drawing.Color.Maroon;
+            this.btnsell.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnsell.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsell.Location = new System.Drawing.Point(211, 372);
+            this.btnsell.Name = "btnsell";
+            this.btnsell.Size = new System.Drawing.Size(633, 75);
+            this.btnsell.TabIndex = 4;
+            this.btnsell.Text = "Sell";
+            this.btnsell.UseVisualStyleBackColor = false;
+            this.btnsell.Click += new System.EventHandler(this.button4_Click);
             // 
             // maindashboardsidepanel
             // 
@@ -55,7 +70,7 @@ namespace oops_lab_final_project_Front_End
             this.maindashboardsidepanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.maindashboardsidepanel.Location = new System.Drawing.Point(0, 0);
             this.maindashboardsidepanel.Name = "maindashboardsidepanel";
-            this.maindashboardsidepanel.Size = new System.Drawing.Size(211, 450);
+            this.maindashboardsidepanel.Size = new System.Drawing.Size(211, 447);
             this.maindashboardsidepanel.TabIndex = 0;
             // 
             // btnsplogout
@@ -65,12 +80,13 @@ namespace oops_lab_final_project_Front_End
             this.btnsplogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsplogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsplogout.ForeColor = System.Drawing.Color.Azure;
-            this.btnsplogout.Location = new System.Drawing.Point(0, 417);
+            this.btnsplogout.Location = new System.Drawing.Point(0, 414);
             this.btnsplogout.Name = "btnsplogout";
             this.btnsplogout.Size = new System.Drawing.Size(211, 33);
             this.btnsplogout.TabIndex = 7;
             this.btnsplogout.Text = "Log Out";
             this.btnsplogout.UseVisualStyleBackColor = false;
+            this.btnsplogout.Click += new System.EventHandler(this.btnsplogout_Click);
             // 
             // button2
             // 
@@ -156,6 +172,7 @@ namespace oops_lab_final_project_Front_End
             this.btnmarketplace.TabIndex = 1;
             this.btnmarketplace.Text = "Marketplace";
             this.btnmarketplace.UseVisualStyleBackColor = false;
+            this.btnmarketplace.Click += new System.EventHandler(this.btnmarketplace_Click);
             // 
             // btnsphome
             // 
@@ -172,11 +189,26 @@ namespace oops_lab_final_project_Front_End
             this.btnsphome.UseVisualStyleBackColor = false;
             this.btnsphome.Click += new System.EventHandler(this.btnsphome_Click);
             // 
+            // bakraListingCard1
+            // 
+            this.bakraListingCard1.AnimalDetails = "2 Teeth | 40 kg | Male";
+            this.bakraListingCard1.AnimalLocation = "karachi";
+            this.bakraListingCard1.AnimalPrice = "PKR 50,000";
+            this.bakraListingCard1.AnimalTitle = "Beautiful White Bakra";
+            this.bakraListingCard1.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.sidepanel;
+            this.bakraListingCard1.Location = new System.Drawing.Point(211, 0);
+            this.bakraListingCard1.Name = "bakraListingCard1";
+            this.bakraListingCard1.Size = new System.Drawing.Size(633, 131);
+            this.bakraListingCard1.TabIndex = 5;
+            // 
             // MainDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 450);
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm;
+            this.ClientSize = new System.Drawing.Size(844, 447);
+            this.Controls.Add(this.bakraListingCard1);
+            this.Controls.Add(this.btnsell);
             this.Controls.Add(this.maindashboardsidepanel);
             this.Name = "MainDashboard";
             this.Text = "MainDashboard";
@@ -197,5 +229,7 @@ namespace oops_lab_final_project_Front_End
         private System.Windows.Forms.Button btnorderhistory;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnsplogout;
+        private System.Windows.Forms.Button btnsell;
+        private bakraListingCard bakraListingCard1;
     }
 }

@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="bakraListingCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bakraListingCard.Designer.cs">
+      <DependentUpon>bakraListingCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="confirmnewpasswordpage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
     <Compile Include="TempDatabase.cs" />
+    <EmbeddedResource Include="bakraListingCard.resx">
+      <DependentUpon>bakraListingCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="confirmnewpasswordpage.resx">
       <DependentUpon>confirmnewpasswordpage.cs</DependentUpon>
     </EmbeddedResource>
@@ -105,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainDashboard.resx">
       <DependentUpon>MainDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="marketplacesidepanel.resx">
+      <DependentUpon>marketplacesidepanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -161,6 +173,60 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\send-button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\market place logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo market.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21378914889_a63f7d4ed0_b.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goat marketplace.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60e3026f17857ec13f54efd7a365274d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\%28small scale%29 goats - farm animals - greige - LAD22.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\60e3026f17857ec13f54efd7a365274d1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute baby goats sweet farm animals flowers leaves and goat spring summer.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goat floral goat floral farm floral farm animals floral nigerian dwarf.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goat marketplace1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Goat Stack.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\goats goat goat goat breeds farm farm animals green.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

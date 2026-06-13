@@ -44,7 +44,7 @@ namespace oops_lab_final_project_Front_End
             this.txtloginpage.AutoSize = true;
             this.txtloginpage.BackColor = System.Drawing.Color.Transparent;
             this.txtloginpage.Font = new System.Drawing.Font("Microsoft Sans Serif", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtloginpage.ForeColor = System.Drawing.SystemColors.Info;
+            this.txtloginpage.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
             this.txtloginpage.Location = new System.Drawing.Point(321, 58);
             this.txtloginpage.Name = "txtloginpage";
             this.txtloginpage.Size = new System.Drawing.Size(180, 35);
@@ -130,7 +130,7 @@ namespace oops_lab_final_project_Front_End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.resigister_page_2;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources._60e3026f17857ec13f54efd7a365274d1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(652, 450);
             this.Controls.Add(this.btncreatenewacc);

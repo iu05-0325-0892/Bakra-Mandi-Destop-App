@@ -118,14 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="register page" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\register page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="search-box" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\search-box.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logo market" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logo market.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login page 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login page 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="60e3026f17857ec13f54efd7a365274d" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\60e3026f17857ec13f54efd7a365274d.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sidepanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidepanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,19 +136,70 @@
   <data name="forgot password page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forgot password page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="login page background" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\login page background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="register page" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\register page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="send-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\send-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="resigister page 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\resigister page 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="goat marketplace" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goat marketplace.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="login page background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\login page background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="21378914889_a63f7d4ed0_b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\21378914889_a63f7d4ed0_b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="confrim new password page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\confrim new password page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="search-box" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\search-box.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="market place logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\market place logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="search-box png" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search-box png.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="send-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\send-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="alpine goat alpine goat alpine goat alpine goat floral goat farm farm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="(small scale) goats - farm animals - greige - LAD22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\(small scale) goats - farm animals - greige - LAD22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="60e3026f17857ec13f54efd7a365274d1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\60e3026f17857ec13f54efd7a365274d1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="alpine goat alpine goat alpine goat alpine goat floral goat farm farm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Cute baby goats sweet farm animals flowers leaves and goat spring summer" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Cute baby goats sweet farm animals flowers leaves and goat spring summer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goat floral goat floral farm floral farm animals floral nigerian dwarf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goat floral goat floral farm floral farm animals floral nigerian dwarf.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goat marketplace1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goat marketplace1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Goat Stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Goat Stack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="goats goat goat goat breeds farm farm animals green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goats goat goat goat breeds farm farm animals green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

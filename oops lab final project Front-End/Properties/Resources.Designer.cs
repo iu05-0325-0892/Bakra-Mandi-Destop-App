@@ -63,6 +63,66 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _21378914889_a63f7d4ed0_b {
+            get {
+                object obj = ResourceManager.GetObject("21378914889_a63f7d4ed0_b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _60e3026f17857ec13f54efd7a365274d {
+            get {
+                object obj = ResourceManager.GetObject("60e3026f17857ec13f54efd7a365274d", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _60e3026f17857ec13f54efd7a365274d1 {
+            get {
+                object obj = ResourceManager.GetObject("60e3026f17857ec13f54efd7a365274d1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _small_scale__goats___farm_animals___greige___LAD22 {
+            get {
+                object obj = ResourceManager.GetObject("(small scale) goats - farm animals - greige - LAD22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm {
+            get {
+                object obj = ResourceManager.GetObject("alpine goat alpine goat alpine goat alpine goat floral goat farm farm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm1 {
+            get {
+                object obj = ResourceManager.GetObject("alpine goat alpine goat alpine goat alpine goat floral goat farm farm1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap confrim_new_password_page {
             get {
                 object obj = ResourceManager.GetObject("confrim new password page", resourceCulture);
@@ -73,9 +133,109 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Cute_baby_goats_sweet_farm_animals_flowers_leaves_and_goat_spring_summer {
+            get {
+                object obj = ResourceManager.GetObject("Cute baby goats sweet farm animals flowers leaves and goat spring summer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap forgot_password_page {
             get {
                 object obj = ResourceManager.GetObject("forgot password page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goat_floral_goat_floral_farm_floral_farm_animals_floral_nigerian_dwarf {
+            get {
+                object obj = ResourceManager.GetObject("goat floral goat floral farm floral farm animals floral nigerian dwarf", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goat_marketplace {
+            get {
+                object obj = ResourceManager.GetObject("goat marketplace", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goat_marketplace1 {
+            get {
+                object obj = ResourceManager.GetObject("goat marketplace1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Goat_Stack {
+            get {
+                object obj = ResourceManager.GetObject("Goat Stack", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goat_standing_on_an_old_royal_enfield_motorcycle_this_was_an_everyday_DTMXGN {
+            get {
+                object obj = ResourceManager.GetObject("goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goat_standing_on_an_old_royal_enfield_motorcycle_this_was_an_everyday_DTMXGN1 {
+            get {
+                object obj = ResourceManager.GetObject("goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap goats_goat_goat_goat_breeds_farm_farm_animals_green {
+            get {
+                object obj = ResourceManager.GetObject("goats goat goat goat breeds farm farm animals green", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images {
+            get {
+                object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +256,26 @@ namespace oops_lab_final_project_Front_End.Properties {
         internal static System.Drawing.Bitmap login_page_background {
             get {
                 object obj = ResourceManager.GetObject("login page background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logo_market {
+            get {
+                object obj = ResourceManager.GetObject("logo market", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap market_place_logo {
+            get {
+                object obj = ResourceManager.GetObject("market place logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
