@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace oops_lab_final_project_Front_End
 {
@@ -17,43 +18,61 @@ namespace oops_lab_final_project_Front_End
             InitializeComponent();
         }
 
-        // This is your main Login button
         private void btnloginin_Click(object sender, EventArgs e)
         {
-            
             string inputUsername = txtusername.Text.Trim();
             string inputPassword = txtpassword.Text.Trim();
 
-            bool loginSuccess = false;
-            string userRole = "";
-
-            // 2. Search our temporary database for a match
-            foreach (User u in TempDatabase.Users)
+            if (string.IsNullOrEmpty(inputUsername) || string.IsNullOrEmpty(inputPassword))
             {
-                if (u.Username == inputUsername && u.Password == inputPassword)
+                MessageBox.Show("Please enter both username and password!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "users.txt");
+
+            if (!File.Exists(filePath))
+            {
+                MessageBox.Show("No registered users found! Please register first.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            bool loginSuccess = false;
+            string userRole = "Buyer";
+
+            string[] lines = File.ReadAllLines(filePath);
+
+            foreach (string line in lines)
+            {
+                string[] parts = line.Split(',');
+                if (parts.Length >= 3)
                 {
-                    loginSuccess = true;
-                    userRole = u.Role; // Grab whether they are a Buyer or Seller
-                    break; // Stop searching, we found them!
+                    string savedUser = parts[0].Trim();
+                    string savedPass = parts[1].Trim();
+                    string savedRole = parts[2].Trim().ToLower() == "seller" ? "Seller" : "Buyer"; // ← FIX
+
+                    if (savedUser.Equals(inputUsername, StringComparison.OrdinalIgnoreCase) && savedPass == inputPassword)
+                    {
+                        loginSuccess = true;
+                        userRole = savedRole;
+                        break;
+                    }
                 }
             }
 
-            // 3. Decide what to do
             if (loginSuccess == true)
             {
-                // Pass the correct role to the Dashboard
+                MessageBox.Show("Login Successful! Welcome " + inputUsername, "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 MainDashboard mainPage = new MainDashboard(userRole);
                 mainPage.Show();
                 this.Hide();
             }
             else
             {
-                // Pop up an error if they typed the wrong password
                 MessageBox.Show("Invalid Username or Password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
-        // This is your Create Account button
         private void btncreatenewacc_Click(object sender, EventArgs e)
         {
             RegisterForm regPage = new RegisterForm();
@@ -61,7 +80,6 @@ namespace oops_lab_final_project_Front_End
             this.Hide();
         }
 
-        // This is your Forgot Password button
         private void btnforgotpassword_Click(object sender, EventArgs e)
         {
             Forgotpasswordpage forgotPage = new Forgotpasswordpage();
@@ -69,9 +87,6 @@ namespace oops_lab_final_project_Front_End
             this.Hide();
         }
 
-        private void txtusername_Click(object sender, EventArgs e)
-        {
-
-        }
+        private void txtusername_Click(object sender, EventArgs e) { }
     }
 }

@@ -199,6 +199,7 @@ namespace oops_lab_final_project_Front_End
             this.btnseller.TabIndex = 13;
             this.btnseller.Text = "Seller";
             this.btnseller.UseVisualStyleBackColor = true;
+            this.btnseller.Click += new System.EventHandler(this.btnseller_Click);
             // 
             // txtusername
             // 
@@ -243,7 +244,6 @@ namespace oops_lab_final_project_Front_End
             this.writeusername.Name = "writeusername";
             this.writeusername.Size = new System.Drawing.Size(148, 26);
             this.writeusername.TabIndex = 17;
-            
             // 
             // writenewpassword
             // 

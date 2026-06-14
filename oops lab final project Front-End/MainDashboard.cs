@@ -36,21 +36,24 @@ namespace oops_lab_final_project_Front_End
         {
             // --- ROLE MANAGEMENT LOGIC ---
             btnmarketplace.Visible = false;
-            btnManageInventory.Visible = false;
-            btnviewsales.Visible = false;
-            btnorderhistory.Visible = false;
+
+            // In missing buttons ko humne poori tarah disable kar diya hai taake crash na ho
+            // btnManageInventory.Visible = false;
+            // btnviewsales.Visible = false;
+            // btnorderhistory.Visible = false;
+
             btnsell.Visible = false; // Hide the Sell button by default
 
             if (currentUserRole == "Seller")
             {
-                btnManageInventory.Visible = true;
-                btnviewsales.Visible = true;
+                // btnManageInventory.Visible = true;
+                // btnviewsales.Visible = true;
                 btnsell.Visible = true; // Show it ONLY if they are a Seller
             }
             else if (currentUserRole == "Buyer")
             {
                 btnmarketplace.Visible = true;
-                btnorderhistory.Visible = true;
+                // btnorderhistory.Visible = true;
                 // Buyer does NOT get the Sell button
             }
         }
@@ -64,14 +67,14 @@ namespace oops_lab_final_project_Front_End
 
         private void btnInbox_Click(object sender, EventArgs e)
         {
-            inboxsidepanel myInbox = new inboxsidepanel();
-            myInbox.Show();
+            // inboxsidepanel myInbox = new inboxsidepanel();
+            //  myInbox.Show();
         }
 
         private void btninbox_Click_1(object sender, EventArgs e)
         {
-            inboxsidepanel myInbox = new inboxsidepanel();
-            myInbox.Show();
+            //   inboxsidepanel myInbox = new inboxsidepanel();
+            //  myInbox.Show();
         }
 
         private void btnsplogout_Click(object sender, EventArgs e)
@@ -94,8 +97,8 @@ namespace oops_lab_final_project_Front_End
 
         private void btnmarketplace_Click(object sender, EventArgs e)
         {
-            marketplacesidepanel marketPage = new marketplacesidepanel();
-            marketPage.Show();
+            // marketplacesidepanel marketPage = new marketplacesidepanel();
+            // marketPage.Show();
         }
     }
 }

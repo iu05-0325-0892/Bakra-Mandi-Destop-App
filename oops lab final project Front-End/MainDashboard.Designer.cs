@@ -1,5 +1,4 @@
-﻿
-namespace oops_lab_final_project_Front_End
+﻿namespace oops_lab_final_project_Front_End
 {
     partial class MainDashboard
     {
@@ -54,11 +53,7 @@ namespace oops_lab_final_project_Front_End
             // maindashboardsidepanel
             // 
             this.maindashboardsidepanel.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.sidepanel;
-            this.maindashboardsidepanel.Controls.Add(this.btnsplogout);
-            this.maindashboardsidepanel.Controls.Add(this.button2);
-            this.maindashboardsidepanel.Controls.Add(this.btnorderhistory);
-            this.maindashboardsidepanel.Controls.Add(this.btnviewsales);
-            this.maindashboardsidepanel.Controls.Add(this.btnManageInventory);
+            this.maindashboardsidepanel.Controls.Add(this.btnmyanimal);
             this.maindashboardsidepanel.Controls.Add(this.btninbox);
             this.maindashboardsidepanel.Controls.Add(this.btnmarketplace);
             this.maindashboardsidepanel.Controls.Add(this.btnsphome);
@@ -136,6 +131,7 @@ namespace oops_lab_final_project_Front_End
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(936, 692);
+            this.Controls.Add(this.btnsell);
             this.Controls.Add(this.maindashboardsidepanel);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainDashboard";
@@ -152,12 +148,7 @@ namespace oops_lab_final_project_Front_End
         private System.Windows.Forms.Button btnmarketplace;
         private System.Windows.Forms.Button btnsphome;
         private System.Windows.Forms.Button btninbox;
-        private System.Windows.Forms.Button btnManageInventory;
-        private System.Windows.Forms.Button btnviewsales;
-        private System.Windows.Forms.Button btnorderhistory;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnsplogout;
         private System.Windows.Forms.Button btnsell;
-        private bakraListingCard bakraListingCard1;
+        private System.Windows.Forms.Button btnmyanimal;
     }
 }

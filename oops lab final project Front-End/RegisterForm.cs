@@ -7,22 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace oops_lab_final_project_Front_End
 {
     public partial class RegisterForm : Form
     {
+        // Role ko store karne ke liye variable (Default: Buyer)
+        private string selectedRole = "Buyer";
+
         public RegisterForm()
         {
             InitializeComponent();
         }
 
-        // Yahan 'object' daal kar error fix kar diya hai
+        // Agar user Buyer wale button par click kare
+        private void btnbuyer_Click(object sender, EventArgs e)
+        {
+            selectedRole = "Buyer";
+            MessageBox.Show("Selected Role: Buyer", "Role Set", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        // Agar user Seller wale button par click kare
+        private void btnseller_Click(object sender, EventArgs e)
+        {
+            selectedRole = "Seller";
+            MessageBox.Show("Selected Role: Seller", "Role Set", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         private void btnsignup_Click(object sender, EventArgs e)
         {
-            string uName = txtusername.Text.Trim();
+            string uName = writeusername.Text.Trim();
             string pass = writenewpassword.Text.Trim();
-            string selectedRole = "Buyer";
 
             if (string.IsNullOrEmpty(uName) || string.IsNullOrEmpty(pass))
             {
@@ -30,12 +46,13 @@ namespace oops_lab_final_project_Front_End
                 return;
             }
 
-            User newAccount = new User();
-            newAccount.Username = uName;
-            newAccount.Password = pass;
-            newAccount.Role = selectedRole;
+            // Path ko fix kar diya taake dono forms ek hi file use karein
+            string filePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "users.txt");
+           
 
-            TempDatabase.Users.Add(newAccount);
+            string userData = uName + "," + pass + "," + selectedRole + Environment.NewLine;
+
+            File.AppendAllText(filePath, userData);
 
             MessageBox.Show("Registration Successful! Now you can Login.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
