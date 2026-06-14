@@ -93,6 +93,16 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _64e730638b09aae07e746bb9bf378670 {
+            get {
+                object obj = ResourceManager.GetObject("64e730638b09aae07e746bb9bf378670", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _small_scale__goats___farm_animals___greige___LAD22 {
             get {
                 object obj = ResourceManager.GetObject("(small scale) goats - farm animals - greige - LAD22", resourceCulture);

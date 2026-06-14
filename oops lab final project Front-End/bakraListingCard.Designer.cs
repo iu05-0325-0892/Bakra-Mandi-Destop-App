@@ -94,7 +94,7 @@ namespace oops_lab_final_project_Front_End
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources._21378914889_a63f7d4ed0_b;
+            this.pictureBox1.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.images__1_;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(168, 131);
@@ -106,6 +106,7 @@ namespace oops_lab_final_project_Front_End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources._64e730638b09aae07e746bb9bf378670;
             this.Controls.Add(this.btnContact);
             this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.lblLocation);

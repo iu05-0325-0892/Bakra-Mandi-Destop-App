@@ -111,7 +111,7 @@ namespace oops_lab_final_project_Front_End
             this.btnloginin.Name = "btnloginin";
             this.btnloginin.Size = new System.Drawing.Size(75, 23);
             this.btnloginin.TabIndex = 6;
-            this.btnloginin.Text = "Login In";
+            this.btnloginin.Text = "Login";
             this.btnloginin.UseVisualStyleBackColor = false;
             this.btnloginin.Click += new System.EventHandler(this.btnloginin_Click);
             // 
