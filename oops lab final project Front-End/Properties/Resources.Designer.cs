@@ -293,6 +293,16 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap profile_pic {
+            get {
+                object obj = ResourceManager.GetObject("profile pic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap register_page {
             get {
                 object obj = ResourceManager.GetObject("register page", resourceCulture);
@@ -336,6 +346,16 @@ namespace oops_lab_final_project_Front_End.Properties {
         internal static System.Drawing.Bitmap send_button {
             get {
                 object obj = ResourceManager.GetObject("send-button", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap setting_background {
+            get {
+                object obj = ResourceManager.GetObject("setting background", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

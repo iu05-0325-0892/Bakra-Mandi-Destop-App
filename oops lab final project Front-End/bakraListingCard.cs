@@ -46,5 +46,13 @@ namespace oops_lab_final_project_Front_End
         {
             MessageBox.Show("Phone No: 03362039162", "Contact Seller");
         }
+        public void SetBakraDetails(string title, string price, string location, string teeth, string weight)
+        {
+            // Change label1, label2 to whatever your card's labels are named
+            lblTitle.Text = title;
+            lblPrice.Text = "PKR " + price;
+            lblLocation.Text = location;
+            lblDetails.Text = teeth + " Teeth | " + weight + " kg";
+        }
     }
 }

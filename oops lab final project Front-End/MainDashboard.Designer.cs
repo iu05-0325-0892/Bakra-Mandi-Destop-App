@@ -28,12 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.btnsell = new System.Windows.Forms.Button();
             this.maindashboardsidepanel = new System.Windows.Forms.Panel();
+            this.btnlogout = new System.Windows.Forms.Button();
+            this.btnsettings = new System.Windows.Forms.Button();
+            this.btnhistory = new System.Windows.Forms.Button();
+            this.btnviewsales = new System.Windows.Forms.Button();
             this.btnmyanimal = new System.Windows.Forms.Button();
             this.btninbox = new System.Windows.Forms.Button();
             this.btnmarketplace = new System.Windows.Forms.Button();
             this.btnsphome = new System.Windows.Forms.Button();
+            this.bakraListingCard1 = new oops_lab_final_project_Front_End.bakraListingCard();
             this.maindashboardsidepanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,9 +48,10 @@
             this.btnsell.BackColor = System.Drawing.Color.Maroon;
             this.btnsell.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnsell.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnsell.Location = new System.Drawing.Point(211, 372);
+            this.btnsell.Location = new System.Drawing.Point(235, 401);
+            this.btnsell.Margin = new System.Windows.Forms.Padding(2);
             this.btnsell.Name = "btnsell";
-            this.btnsell.Size = new System.Drawing.Size(633, 75);
+            this.btnsell.Size = new System.Drawing.Size(633, 49);
             this.btnsell.TabIndex = 4;
             this.btnsell.Text = "Sell";
             this.btnsell.UseVisualStyleBackColor = false;
@@ -53,16 +60,77 @@
             // maindashboardsidepanel
             // 
             this.maindashboardsidepanel.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.sidepanel;
+            this.maindashboardsidepanel.Controls.Add(this.btnlogout);
+            this.maindashboardsidepanel.Controls.Add(this.btnsettings);
+            this.maindashboardsidepanel.Controls.Add(this.btnhistory);
+            this.maindashboardsidepanel.Controls.Add(this.btnviewsales);
             this.maindashboardsidepanel.Controls.Add(this.btnmyanimal);
             this.maindashboardsidepanel.Controls.Add(this.btninbox);
             this.maindashboardsidepanel.Controls.Add(this.btnmarketplace);
             this.maindashboardsidepanel.Controls.Add(this.btnsphome);
             this.maindashboardsidepanel.Dock = System.Windows.Forms.DockStyle.Left;
             this.maindashboardsidepanel.Location = new System.Drawing.Point(0, 0);
-            this.maindashboardsidepanel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.maindashboardsidepanel.Name = "maindashboardsidepanel";
-            this.maindashboardsidepanel.Size = new System.Drawing.Size(352, 692);
+            this.maindashboardsidepanel.Size = new System.Drawing.Size(235, 450);
             this.maindashboardsidepanel.TabIndex = 0;
+            // 
+            // btnlogout
+            // 
+            this.btnlogout.BackColor = System.Drawing.Color.Transparent;
+            this.btnlogout.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnlogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnlogout.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnlogout.ForeColor = System.Drawing.Color.Azure;
+            this.btnlogout.Location = new System.Drawing.Point(0, 417);
+            this.btnlogout.Name = "btnlogout";
+            this.btnlogout.Size = new System.Drawing.Size(235, 33);
+            this.btnlogout.TabIndex = 7;
+            this.btnlogout.Text = "Log out";
+            this.btnlogout.UseVisualStyleBackColor = false;
+            this.btnlogout.Click += new System.EventHandler(this.btnlogout_Click_1);
+            // 
+            // btnsettings
+            // 
+            this.btnsettings.BackColor = System.Drawing.Color.Transparent;
+            this.btnsettings.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsettings.ForeColor = System.Drawing.Color.Azure;
+            this.btnsettings.Location = new System.Drawing.Point(0, 186);
+            this.btnsettings.Name = "btnsettings";
+            this.btnsettings.Size = new System.Drawing.Size(235, 33);
+            this.btnsettings.TabIndex = 6;
+            this.btnsettings.Text = "Settings Profile";
+            this.btnsettings.UseVisualStyleBackColor = false;
+            this.btnsettings.Click += new System.EventHandler(this.btnsettings_Click);
+            // 
+            // btnhistory
+            // 
+            this.btnhistory.BackColor = System.Drawing.Color.Transparent;
+            this.btnhistory.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnhistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnhistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnhistory.ForeColor = System.Drawing.Color.Azure;
+            this.btnhistory.Location = new System.Drawing.Point(0, 153);
+            this.btnhistory.Name = "btnhistory";
+            this.btnhistory.Size = new System.Drawing.Size(235, 33);
+            this.btnhistory.TabIndex = 5;
+            this.btnhistory.Text = "Order History";
+            this.btnhistory.UseVisualStyleBackColor = false;
+            // 
+            // btnviewsales
+            // 
+            this.btnviewsales.BackColor = System.Drawing.Color.Transparent;
+            this.btnviewsales.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnviewsales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnviewsales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnviewsales.ForeColor = System.Drawing.Color.Azure;
+            this.btnviewsales.Location = new System.Drawing.Point(0, 120);
+            this.btnviewsales.Name = "btnviewsales";
+            this.btnviewsales.Size = new System.Drawing.Size(235, 33);
+            this.btnviewsales.TabIndex = 4;
+            this.btnviewsales.Text = "View Sales";
+            this.btnviewsales.UseVisualStyleBackColor = false;
             // 
             // btnmyanimal
             // 
@@ -71,10 +139,9 @@
             this.btnmyanimal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmyanimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmyanimal.ForeColor = System.Drawing.Color.Azure;
-            this.btnmyanimal.Location = new System.Drawing.Point(0, 135);
-            this.btnmyanimal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnmyanimal.Location = new System.Drawing.Point(0, 87);
             this.btnmyanimal.Name = "btnmyanimal";
-            this.btnmyanimal.Size = new System.Drawing.Size(352, 51);
+            this.btnmyanimal.Size = new System.Drawing.Size(235, 33);
             this.btnmyanimal.TabIndex = 3;
             this.btnmyanimal.Text = "My Animals / Inventory";
             this.btnmyanimal.UseVisualStyleBackColor = false;
@@ -86,13 +153,13 @@
             this.btninbox.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btninbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btninbox.ForeColor = System.Drawing.Color.Azure;
-            this.btninbox.Location = new System.Drawing.Point(0, 84);
-            this.btninbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btninbox.Location = new System.Drawing.Point(0, 54);
             this.btninbox.Name = "btninbox";
-            this.btninbox.Size = new System.Drawing.Size(352, 51);
+            this.btninbox.Size = new System.Drawing.Size(235, 33);
             this.btninbox.TabIndex = 2;
             this.btninbox.Text = "Messages / Inbox";
             this.btninbox.UseVisualStyleBackColor = false;
+            this.btninbox.Click += new System.EventHandler(this.btninbox_Click_2);
             // 
             // btnmarketplace
             // 
@@ -101,10 +168,9 @@
             this.btnmarketplace.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnmarketplace.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnmarketplace.ForeColor = System.Drawing.Color.Azure;
-            this.btnmarketplace.Location = new System.Drawing.Point(0, 42);
-            this.btnmarketplace.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnmarketplace.Location = new System.Drawing.Point(0, 27);
             this.btnmarketplace.Name = "btnmarketplace";
-            this.btnmarketplace.Size = new System.Drawing.Size(352, 42);
+            this.btnmarketplace.Size = new System.Drawing.Size(235, 27);
             this.btnmarketplace.TabIndex = 1;
             this.btnmarketplace.Text = "Marketplace";
             this.btnmarketplace.UseVisualStyleBackColor = false;
@@ -118,22 +184,35 @@
             this.btnsphome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsphome.ForeColor = System.Drawing.Color.Azure;
             this.btnsphome.Location = new System.Drawing.Point(0, 0);
-            this.btnsphome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnsphome.Name = "btnsphome";
-            this.btnsphome.Size = new System.Drawing.Size(352, 42);
+            this.btnsphome.Size = new System.Drawing.Size(235, 27);
             this.btnsphome.TabIndex = 0;
             this.btnsphome.Text = "Home";
             this.btnsphome.UseVisualStyleBackColor = false;
             this.btnsphome.Click += new System.EventHandler(this.btnsphome_Click);
             // 
+            // bakraListingCard1
+            // 
+            this.bakraListingCard1.AnimalDetails = "2 Teeth | 40 kg | Male";
+            this.bakraListingCard1.AnimalLocation = "karachi";
+            this.bakraListingCard1.AnimalPrice = "PKR 50,000";
+            this.bakraListingCard1.AnimalTitle = "Beautiful White Bakra";
+            this.bakraListingCard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bakraListingCard1.BackgroundImage")));
+            this.bakraListingCard1.ForeColor = System.Drawing.Color.Black;
+            this.bakraListingCard1.Location = new System.Drawing.Point(235, 0);
+            this.bakraListingCard1.Name = "bakraListingCard1";
+            this.bakraListingCard1.Size = new System.Drawing.Size(588, 135);
+            this.bakraListingCard1.TabIndex = 5;
+            // 
             // MainDashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 692);
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm;
+            this.ClientSize = new System.Drawing.Size(868, 450);
+            this.Controls.Add(this.bakraListingCard1);
             this.Controls.Add(this.btnsell);
             this.Controls.Add(this.maindashboardsidepanel);
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "MainDashboard";
             this.Text = "MainDashboard";
             this.Load += new System.EventHandler(this.MainDashboard_Load);
@@ -150,5 +229,10 @@
         private System.Windows.Forms.Button btninbox;
         private System.Windows.Forms.Button btnsell;
         private System.Windows.Forms.Button btnmyanimal;
+        private System.Windows.Forms.Button btnlogout;
+        private System.Windows.Forms.Button btnsettings;
+        private System.Windows.Forms.Button btnhistory;
+        private System.Windows.Forms.Button btnviewsales;
+        private bakraListingCard bakraListingCard1;
     }
 }

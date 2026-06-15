@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddBakraForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddBakraForm.Designer.cs">
+      <DependentUpon>AddBakraForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="bakraListingCard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -71,6 +77,12 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Goat.cs" />
+    <Compile Include="inboxsidepanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inboxsidepanel.Designer.cs">
+      <DependentUpon>inboxsidepanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -78,6 +90,13 @@
       <DependentUpon>MainDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="MandiManager.cs" />
+    <Compile Include="marketplacesidepanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="marketplacesidepanel.Designer.cs">
+      <DependentUpon>marketplacesidepanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -86,7 +105,16 @@
     <Compile Include="RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SettingsProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsProfileForm.Designer.cs">
+      <DependentUpon>SettingsProfileForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="TempDatabase.cs" />
+    <EmbeddedResource Include="AddBakraForm.resx">
+      <DependentUpon>AddBakraForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="bakraListingCard.resx">
       <DependentUpon>bakraListingCard.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +136,15 @@
     <EmbeddedResource Include="marketplacesidepanel.resx">
       <DependentUpon>marketplacesidepanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.bakraListingCard.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.confirmnewpasswordpage.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.Forgotpasswordpage.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.inboxsidepanel.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.loginpage.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.MainDashboard.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.marketplacesidepanel.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.RegisterForm.resources" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -121,6 +158,18 @@
     <EmbeddedResource Include="RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SettingsProfileForm.resx">
+      <DependentUpon>SettingsProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="bin\Debug\oops lab final project Front-End.exe.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\oops lab 2 final project Front-End.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\oops lab 2 final project Front-End.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\oops lab 2 final project Front-End.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\oops lab final project Front-End.csproj.AssemblyReference.cache" />
+    <None Include="obj\Debug\oops lab final project Front-End.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\oops lab final project Front-End.csproj.GenerateResource.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -220,6 +269,23 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\64e730638b09aae07e746bb9bf378670.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\oops lab final project Front-End.exe" />
+    <Content Include="bin\Debug\oops lab final project Front-End.pdb" />
+    <Content Include="bin\Debug\users.txt" />
+    <Content Include="obj\Debug\oops lab 2 final project Front-End.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\oops lab final project Front-End.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\oops lab final project Front-End.exe" />
+    <Content Include="obj\Debug\oops lab final project Front-End.pdb" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
+    <Content Include="oops lab 2 final project Front-End.sln" />
+    <Content Include="oops lab final project Front-End.sln" />
+    <None Include="Resources\setting background.jpg" />
+    <None Include="Resources\profile pic.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

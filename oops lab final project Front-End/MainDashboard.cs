@@ -77,13 +77,7 @@ namespace oops_lab_final_project_Front_End
             //  myInbox.Show();
         }
 
-        private void btnsplogout_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("You have been successfully logged out.", "Logged Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            loginpage myLogin = new loginpage();
-            myLogin.Show();
-            this.Hide();
-        }
+     
 
         private void button3_Click(object sender, EventArgs e)
         {
@@ -97,8 +91,34 @@ namespace oops_lab_final_project_Front_End
 
         private void btnmarketplace_Click(object sender, EventArgs e)
         {
-            // marketplacesidepanel marketPage = new marketplacesidepanel();
-            // marketPage.Show();
+            marketplacesidepanel marketPage = new marketplacesidepanel();
+            marketPage.Show();
+        }
+
+        private void btnlogout_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("You have been successfully logged out.", "Logged Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loginpage myLogin = new loginpage();
+            myLogin.Show();
+            this.Hide();
+        }
+
+        private void btninbox_Click_2(object sender, EventArgs e)
+        {
+            inboxsidepanel myInbox = new inboxsidepanel();
+            myInbox.Show();
+        }
+
+        private void btnsettings_Click(object sender, EventArgs e)
+        {
+            // 1. Create the Settings page
+            SettingsProfileForm mySettings = new SettingsProfileForm();
+
+            // 2. Hand it the username (using a test name for now)
+            mySettings.LoggedInUsername = "TestUser";
+
+            // 3. Show the settings page
+            mySettings.Show();
         }
     }
 }
