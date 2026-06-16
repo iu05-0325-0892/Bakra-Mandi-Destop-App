@@ -1,15 +1,12 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
+using System.IO;
 
 namespace oops_lab_final_project_Front_End
 {
     public partial class marketplacesidepanel : Form
     {
-        // Counter for the newly added animals
-        int animalCounter = 1;
-
-        // Tracks which card is currently clicked/selected
         private bakraListingCard selectedCard = null;
 
         public marketplacesidepanel()
@@ -17,94 +14,99 @@ namespace oops_lab_final_project_Front_End
             InitializeComponent();
         }
 
-        // --- HELPER METHOD FOR SELECTION HIGHLIGHT ---
         private void SelectAnimalCard(bakraListingCard clickedCard)
         {
-            // Reset the background color of the PREVIOUSLY selected card
             if (selectedCard != null)
             {
-                selectedCard.BackColor = Color.White; // Change this if your default card color is different
+                selectedCard.BackColor = Color.White;
             }
-
-            // Set the new selection and highlight it blue!
             selectedCard = clickedCard;
             selectedCard.BackColor = Color.LightBlue;
         }
 
         private void marketplacesidepanel_Load(object sender, EventArgs e)
         {
-            // 1. Turn on scrolling in case the cards go past the bottom of the screen
             this.AutoScroll = true;
 
-            // 2. Create arrays of sample data
-            string[] titles = { "Beautiful White Bakra", "Spotted Brown Goat", "Pure Gulabi Bakra", "Heavy Kamori Goat", "Desi Black Bakra" };
-            string[] prices = { "PKR 50,000", "PKR 45,000", "PKR 85,000", "PKR 120,000", "PKR 40,000" };
-            string[] locations = { "Karachi", "Lahore", "Islamabad", "Multan", "Faisalabad" };
-            string[] details = { "2 Teeth | 40 kg", "4 Teeth | 50 kg", "2 Teeth | 35 kg", "6 Teeth | 70 kg", "2 Teeth | 38 kg" };
+            string filePath = Path.Combine(
+                AppDomain.CurrentDomain.BaseDirectory, "goats.txt");
 
-            int verticalSpacing = 20; // Starting position for the first card
-
-            // 3. Loop to spawn all 5 animals
-            for (int i = 0; i < 5; i++)
+            if (!File.Exists(filePath))
             {
-                bakraListingCard newAnimalCard = new bakraListingCard();
+                MessageBox.Show("Abhi koi bakra listed nahi hai!", "Empty",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
 
-                // Inject data
-                newAnimalCard.AnimalTitle = titles[i];
-                newAnimalCard.AnimalPrice = prices[i];
-                newAnimalCard.AnimalLocation = locations[i];
-                newAnimalCard.AnimalDetails = details[i];
+            string[] lines = File.ReadAllLines(filePath);
+            int verticalSpacing = 20;
 
-                // Position the card so they stack cleanly
-                newAnimalCard.Location = new Point(50, verticalSpacing);
-                verticalSpacing += 160; // Pushes the next card 160 pixels down
+            foreach (string line in lines)
+            {
+                if (string.IsNullOrWhiteSpace(line)) continue;
 
-                // Make the default cards clickable for selection!
-                newAnimalCard.Click += (s, ev) => { SelectAnimalCard(newAnimalCard); };
-                foreach (Control child in newAnimalCard.Controls)
+                string[] parts = line.Split(',');
+                if (parts.Length >= 5)
                 {
-                    child.Click += (s, ev) => { SelectAnimalCard(newAnimalCard); };
-                }
+                    bakraListingCard newAnimalCard = new bakraListingCard();
 
-                // Force it onto the screen
-                this.Controls.Add(newAnimalCard);
+                    newAnimalCard.AnimalTitle = parts[0].Trim();
+                    newAnimalCard.AnimalPrice = "PKR " + parts[1].Trim();
+                    newAnimalCard.AnimalLocation = parts[2].Trim();
+                    newAnimalCard.AnimalDetails = parts[3].Trim() + " Teeth | " + parts[4].Trim() + " kg";
+
+                    newAnimalCard.Location = new Point(50, verticalSpacing);
+                    verticalSpacing += 160;
+
+                    newAnimalCard.Click += (s, ev) => { SelectAnimalCard(newAnimalCard); };
+                    foreach (Control child in newAnimalCard.Controls)
+                    {
+                        child.Click += (s, ev) => { SelectAnimalCard(newAnimalCard); };
+                    }
+
+                    this.Controls.Add(newAnimalCard);
+                }
             }
         }
-
-        // --- NEWLY ADDED BUTTON FUNCTIONS BELOW ---
 
         private void btnadd_Click(object sender, EventArgs e)
         {
             AddBakraForm myPopup = new AddBakraForm();
 
-            // 1. Only add the card IF the user clicked OK (and didn't just cross out of the window)
             if (myPopup.ShowDialog() == DialogResult.OK)
             {
-                int nextY = 20; // Default starting position if the screen is empty
+                string filePath = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory, "goats.txt");
 
-                // Find the lowest card currently on the screen so we don't overlap
+                string goatData = myPopup.NewTitle + "," +
+                                  myPopup.NewPrice + "," +
+                                  myPopup.NewLocation + "," +
+                                  myPopup.NewTeeth + "," +
+                                  myPopup.NewWeight +
+                                  Environment.NewLine;
+
+                File.AppendAllText(filePath, goatData);
+
+                int nextY = 20;
                 foreach (Control c in this.Controls)
                 {
                     if (c is bakraListingCard)
                     {
                         if (c.Location.Y >= nextY)
                         {
-                            nextY = c.Location.Y + 160; // Match the 160 spacing
+                            nextY = c.Location.Y + 160;
                         }
                     }
                 }
 
-                // 2. Build the new card and inject the live data from the popup!
                 bakraListingCard newCard = new bakraListingCard();
                 newCard.AnimalTitle = myPopup.NewTitle;
                 newCard.AnimalPrice = "PKR " + myPopup.NewPrice;
                 newCard.AnimalLocation = myPopup.NewLocation;
                 newCard.AnimalDetails = myPopup.NewTeeth + " Teeth | " + myPopup.NewWeight + " kg";
 
-                // Place it dynamically
                 newCard.Location = new Point(50, nextY);
 
-                // Make the newly added card clickable for selection too!
                 newCard.Click += (s, ev) => { SelectAnimalCard(newCard); };
                 foreach (Control child in newCard.Controls)
                 {
@@ -112,37 +114,37 @@ namespace oops_lab_final_project_Front_End
                 }
 
                 this.Controls.Add(newCard);
-                animalCounter++;
+
+                MessageBox.Show("Bakra successfully listed! 🐐", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
         private void btnremove_Click(object sender, EventArgs e)
         {
-            // 1. Check if they actually selected a card first
             if (selectedCard == null)
             {
-                MessageBox.Show("Please select an animal card first by clicking on it!", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please select an animal card first!", "No Selection",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // 2. Remove it from the screen and clear memory
             this.Controls.Remove(selectedCard);
             selectedCard.Dispose();
-            selectedCard = null; // Clear tracking reference
+            selectedCard = null;
 
-            // 3. RE-ARRANGE layout instantly so remaining cards shift up and fill the gap!
-            int currentY = 20; // Starting top position
-
+            int currentY = 20;
             foreach (Control c in this.Controls)
             {
                 if (c is bakraListingCard)
                 {
                     c.Location = new Point(50, currentY);
-                    currentY += 160; // Keep your standard layout spacing
+                    currentY += 160;
                 }
             }
 
-            MessageBox.Show("Animal listing removed successfully!", "Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Bakra removed successfully!", "Removed",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

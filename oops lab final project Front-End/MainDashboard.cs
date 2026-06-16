@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace oops_lab_final_project_Front_End
 {
@@ -34,28 +35,59 @@ namespace oops_lab_final_project_Front_End
 
         private void MainDashboard_Load(object sender, EventArgs e)
         {
-            // --- ROLE MANAGEMENT LOGIC ---
             btnmarketplace.Visible = false;
-
-            // In missing buttons ko humne poori tarah disable kar diya hai taake crash na ho
-            // btnManageInventory.Visible = false;
-            // btnviewsales.Visible = false;
-            // btnorderhistory.Visible = false;
-
-            btnsell.Visible = false; // Hide the Sell button by default
+            btnsell.Visible = false;
 
             if (currentUserRole == "Seller")
             {
-                // btnManageInventory.Visible = true;
-                // btnviewsales.Visible = true;
-                btnsell.Visible = true; // Show it ONLY if they are a Seller
+                btnsell.Visible = true;
             }
             else if (currentUserRole == "Buyer")
             {
                 btnmarketplace.Visible = true;
-                // btnorderhistory.Visible = true;
-                // Buyer does NOT get the Sell button
             }
+        }
+
+        private void btnsell_Click(object sender, EventArgs e)
+        {
+            AddBakraForm addForm = new AddBakraForm();
+
+            if (addForm.ShowDialog() == DialogResult.OK)
+            {
+                // Khali fields check
+                if (string.IsNullOrEmpty(addForm.NewTitle) ||
+                    string.IsNullOrEmpty(addForm.NewPrice) ||
+                    string.IsNullOrEmpty(addForm.NewLocation) ||
+                    string.IsNullOrEmpty(addForm.NewTeeth) ||
+                    string.IsNullOrEmpty(addForm.NewWeight))
+                {
+                    MessageBox.Show("Please fill all fields!", "Error",
+                        MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    return;
+                }
+
+                // File mein save karo
+                string filePath = Path.Combine(
+                    AppDomain.CurrentDomain.BaseDirectory, "goats.txt");
+
+                string goatData = addForm.NewTitle + "," +
+                                  addForm.NewPrice + "," +
+                                  addForm.NewLocation + "," +
+                                  addForm.NewTeeth + "," +
+                                  addForm.NewWeight +
+                                  Environment.NewLine;
+
+                File.AppendAllText(filePath, goatData);
+
+                MessageBox.Show("Bakra successfully listed! 🐐", "Success",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btnmarketplace_Click(object sender, EventArgs e)
+        {
+            marketplacesidepanel marketPage = new marketplacesidepanel();
+            marketPage.Show();
         }
 
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -65,42 +97,19 @@ namespace oops_lab_final_project_Front_End
             this.Hide();
         }
 
-        private void btnInbox_Click(object sender, EventArgs e)
+        private void btnlogout_Click_1(object sender, EventArgs e)
         {
-            // inboxsidepanel myInbox = new inboxsidepanel();
-            //  myInbox.Show();
+            MessageBox.Show("You have been successfully logged out.", "Logged Out",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
+            loginpage myLogin = new loginpage();
+            myLogin.Show();
+            this.Hide();
         }
 
         private void btninbox_Click_1(object sender, EventArgs e)
         {
-            //   inboxsidepanel myInbox = new inboxsidepanel();
-            //  myInbox.Show();
-        }
-
-     
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            // Empty click event
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            // Empty click event
-        }
-
-        private void btnmarketplace_Click(object sender, EventArgs e)
-        {
-            marketplacesidepanel marketPage = new marketplacesidepanel();
-            marketPage.Show();
-        }
-
-        private void btnlogout_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("You have been successfully logged out.", "Logged Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            loginpage myLogin = new loginpage();
-            myLogin.Show();
-            this.Hide();
+            inboxsidepanel myInbox = new inboxsidepanel();
+            myInbox.Show();
         }
 
         private void btninbox_Click_2(object sender, EventArgs e)
@@ -111,14 +120,19 @@ namespace oops_lab_final_project_Front_End
 
         private void btnsettings_Click(object sender, EventArgs e)
         {
-            // 1. Create the Settings page
             SettingsProfileForm mySettings = new SettingsProfileForm();
-
-            // 2. Hand it the username (using a test name for now)
-            mySettings.LoggedInUsername = "TestUser";
-
-            // 3. Show the settings page
+            mySettings.LoggedInUsername = currentUserRole;
             mySettings.Show();
         }
+
+        private void btnInbox_Click(object sender, EventArgs e)
+        {
+            inboxsidepanel myInbox = new inboxsidepanel();
+            myInbox.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e) { }
+
+        private void button4_Click(object sender, EventArgs e) { }
     }
 }
