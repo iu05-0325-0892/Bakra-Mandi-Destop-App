@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace oops_lab_final_project_Front_End
 {
@@ -58,12 +59,9 @@ namespace oops_lab_final_project_Front_End
             }
         }
 
-        private void btnLogOut_Click(object sender, EventArgs e)
+        private void btnsell_Click(object sender, EventArgs e)
         {
-            loginpage loginPage = new loginpage();
-            loginPage.Show();
-            this.Hide();
-        }
+            AddBakraForm addForm = new AddBakraForm();
 
         private void btnInbox_Click(object sender, EventArgs e)
         {
@@ -95,12 +93,26 @@ namespace oops_lab_final_project_Front_End
             marketPage.Show();
         }
 
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            loginpage loginPage = new loginpage();
+            loginPage.Show();
+            this.Hide();
+        }
+
         private void btnlogout_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("You have been successfully logged out.", "Logged Out", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("You have been successfully logged out.", "Logged Out",
+                MessageBoxButtons.OK, MessageBoxIcon.Information);
             loginpage myLogin = new loginpage();
             myLogin.Show();
             this.Hide();
+        }
+
+        private void btninbox_Click_1(object sender, EventArgs e)
+        {
+            inboxsidepanel myInbox = new inboxsidepanel();
+            myInbox.Show();
         }
 
         private void btninbox_Click_2(object sender, EventArgs e)
