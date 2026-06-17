@@ -97,7 +97,7 @@ namespace oops_lab_final_project_Front_End
             // txtforgotusername
             // 
             this.txtforgotusername.Location = new System.Drawing.Point(374, 171);
-            this.txtforgotusername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtforgotusername.Margin = new System.Windows.Forms.Padding(2);
             this.txtforgotusername.Name = "txtforgotusername";
             this.txtforgotusername.Size = new System.Drawing.Size(145, 20);
             this.txtforgotusername.TabIndex = 5;
@@ -118,7 +118,8 @@ namespace oops_lab_final_project_Front_End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.forgot_password_page;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.verify_pass;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtforgotusername);

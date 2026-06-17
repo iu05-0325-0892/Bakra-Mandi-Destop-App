@@ -54,5 +54,26 @@ namespace oops_lab_final_project_Front_End
             lblLocation.Text = location;
             lblDetails.Text = teeth + " Teeth | " + weight + " kg";
         }
+       
+        public void MarkAsSold()
+        {
+           
+            this.BackColor = Color.LightGray;
+
+           
+            this.Enabled = false;
+
+        }
+        private void bakraListingCard_Load(object sender, EventArgs e)
+        {
+            
+           
+        }
+
+        private void bakraListingCard_Click(object sender, EventArgs e)
+        {
+            
+            }
+        }
     }
-}
+

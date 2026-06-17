@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDashboard));
             this.btnsell = new System.Windows.Forms.Button();
             this.maindashboardsidepanel = new System.Windows.Forms.Panel();
             this.btnlogout = new System.Windows.Forms.Button();
             this.btnsettings = new System.Windows.Forms.Button();
             this.btnhistory = new System.Windows.Forms.Button();
-            this.btnviewsales = new System.Windows.Forms.Button();
             this.btnmyanimal = new System.Windows.Forms.Button();
             this.btninbox = new System.Windows.Forms.Button();
             this.btnmarketplace = new System.Windows.Forms.Button();
@@ -45,7 +43,9 @@
             // 
             // btnsell
             // 
-            this.btnsell.BackColor = System.Drawing.Color.Maroon;
+            this.btnsell.BackColor = System.Drawing.Color.Transparent;
+            this.btnsell.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.ade31007_13ac_4321_afd3_504a0a12f0001;
+            this.btnsell.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnsell.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btnsell.Font = new System.Drawing.Font("Microsoft Sans Serif", 17F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsell.Location = new System.Drawing.Point(235, 401);
@@ -59,11 +59,11 @@
             // 
             // maindashboardsidepanel
             // 
-            this.maindashboardsidepanel.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.sidepanel;
+            this.maindashboardsidepanel.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.sidepanel111_png;
+            this.maindashboardsidepanel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.maindashboardsidepanel.Controls.Add(this.btnlogout);
             this.maindashboardsidepanel.Controls.Add(this.btnsettings);
             this.maindashboardsidepanel.Controls.Add(this.btnhistory);
-            this.maindashboardsidepanel.Controls.Add(this.btnviewsales);
             this.maindashboardsidepanel.Controls.Add(this.btnmyanimal);
             this.maindashboardsidepanel.Controls.Add(this.btninbox);
             this.maindashboardsidepanel.Controls.Add(this.btnmarketplace);
@@ -96,7 +96,7 @@
             this.btnsettings.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsettings.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsettings.ForeColor = System.Drawing.Color.Azure;
-            this.btnsettings.Location = new System.Drawing.Point(0, 186);
+            this.btnsettings.Location = new System.Drawing.Point(0, 153);
             this.btnsettings.Name = "btnsettings";
             this.btnsettings.Size = new System.Drawing.Size(235, 33);
             this.btnsettings.TabIndex = 6;
@@ -111,26 +111,13 @@
             this.btnhistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnhistory.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnhistory.ForeColor = System.Drawing.Color.Azure;
-            this.btnhistory.Location = new System.Drawing.Point(0, 153);
+            this.btnhistory.Location = new System.Drawing.Point(0, 120);
             this.btnhistory.Name = "btnhistory";
             this.btnhistory.Size = new System.Drawing.Size(235, 33);
             this.btnhistory.TabIndex = 5;
             this.btnhistory.Text = "Order History";
             this.btnhistory.UseVisualStyleBackColor = false;
-            // 
-            // btnviewsales
-            // 
-            this.btnviewsales.BackColor = System.Drawing.Color.Transparent;
-            this.btnviewsales.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnviewsales.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnviewsales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnviewsales.ForeColor = System.Drawing.Color.Azure;
-            this.btnviewsales.Location = new System.Drawing.Point(0, 120);
-            this.btnviewsales.Name = "btnviewsales";
-            this.btnviewsales.Size = new System.Drawing.Size(235, 33);
-            this.btnviewsales.TabIndex = 4;
-            this.btnviewsales.Text = "View Sales";
-            this.btnviewsales.UseVisualStyleBackColor = false;
+            this.btnhistory.Click += new System.EventHandler(this.btnhistory_Click);
             // 
             // btnmyanimal
             // 
@@ -145,6 +132,7 @@
             this.btnmyanimal.TabIndex = 3;
             this.btnmyanimal.Text = "My Animals / Inventory";
             this.btnmyanimal.UseVisualStyleBackColor = false;
+            this.btnmyanimal.Click += new System.EventHandler(this.btnmyanimal_Click);
             // 
             // btninbox
             // 
@@ -197,7 +185,8 @@
             this.bakraListingCard1.AnimalLocation = "karachi";
             this.bakraListingCard1.AnimalPrice = "PKR 50,000";
             this.bakraListingCard1.AnimalTitle = "Beautiful White Bakra";
-            this.bakraListingCard1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bakraListingCard1.BackgroundImage")));
+            this.bakraListingCard1.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.card1211;
+            this.bakraListingCard1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bakraListingCard1.ForeColor = System.Drawing.Color.Black;
             this.bakraListingCard1.Location = new System.Drawing.Point(235, 0);
             this.bakraListingCard1.Name = "bakraListingCard1";
@@ -208,7 +197,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.ade31007_13ac_4321_afd3_504a0a12f000;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(868, 450);
             this.Controls.Add(this.bakraListingCard1);
             this.Controls.Add(this.btnsell);
@@ -232,7 +222,6 @@
         private System.Windows.Forms.Button btnlogout;
         private System.Windows.Forms.Button btnsettings;
         private System.Windows.Forms.Button btnhistory;
-        private System.Windows.Forms.Button btnviewsales;
         private bakraListingCard bakraListingCard1;
     }
 }

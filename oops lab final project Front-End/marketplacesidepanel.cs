@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 
@@ -9,8 +10,12 @@ namespace oops_lab_final_project_Front_End
         // Counter for the newly added animals
         int animalCounter = 1;
 
-        // Tracks which card is currently clicked/selected
+        // Tracks which card is currently clicked/selected (We only need this ONE variable!)
         private bakraListingCard selectedCard = null;
+
+        // --- NEW: INVENTORY DATABASE ---
+        // This stores any new animals you add to the marketplace
+        public static List<bakraListingCard> InventoryDatabase = new List<bakraListingCard>();
 
         public marketplacesidepanel()
         {
@@ -77,7 +82,7 @@ namespace oops_lab_final_project_Front_End
         {
             AddBakraForm myPopup = new AddBakraForm();
 
-            // 1. Only add the card IF the user clicked OK (and didn't just cross out of the window)
+            // 1. Only add the card IF the user clicked OK
             if (myPopup.ShowDialog() == DialogResult.OK)
             {
                 int nextY = 20; // Default starting position if the screen is empty
@@ -112,6 +117,10 @@ namespace oops_lab_final_project_Front_End
                 }
 
                 this.Controls.Add(newCard);
+
+                // --- NEW: Add the card to the Inventory Database! ---
+                InventoryDatabase.Add(newCard);
+
                 animalCounter++;
             }
         }
@@ -123,6 +132,12 @@ namespace oops_lab_final_project_Front_End
             {
                 MessageBox.Show("Please select an animal card first by clicking on it!", "No Selection", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
+            }
+
+            // --- NEW: Remove from Inventory if deleted from marketplace ---
+            if (InventoryDatabase.Contains(selectedCard))
+            {
+                InventoryDatabase.Remove(selectedCard);
             }
 
             // 2. Remove it from the screen and clear memory
@@ -143,6 +158,37 @@ namespace oops_lab_final_project_Front_End
             }
 
             MessageBox.Show("Animal listing removed successfully!", "Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnbuy_Click(object sender, EventArgs e)
+        {
+            if (selectedCard != null)
+            {
+                // 1. Create a BRAND NEW card object for the history
+                bakraListingCard historyCard = new bakraListingCard();
+
+                // 2. Copy the data (Deep Copying logic)
+                historyCard.AnimalTitle = selectedCard.AnimalTitle;
+                historyCard.AnimalPrice = selectedCard.AnimalPrice;
+                historyCard.AnimalLocation = selectedCard.AnimalLocation;
+                historyCard.AnimalDetails = selectedCard.AnimalDetails;
+
+                // 3. Mark the history card as sold
+                historyCard.MarkAsSold();
+
+                // 4. Add this NEW object to the database
+                orderhistory.PurchasedDatabase.Add(historyCard);
+
+                // 5. Mark the original as sold and clear selection
+                selectedCard.MarkAsSold();
+
+                MessageBox.Show("Purchase Successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                selectedCard = null;
+            }
+            else
+            {
+                MessageBox.Show("Please select a Bakra first!");
+            }
         }
     }
 }

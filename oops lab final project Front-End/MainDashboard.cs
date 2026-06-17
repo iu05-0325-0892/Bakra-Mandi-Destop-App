@@ -14,14 +14,14 @@ namespace oops_lab_final_project_Front_End
     {
         public string currentUserRole = "";
 
-        // CONSTRUCTOR 1
-        public MainDashboard()
+        // CONSTRUCTOR 1
+        public MainDashboard()
         {
             InitializeComponent();
         }
 
-        // CONSTRUCTOR 2
-        public MainDashboard(string role)
+        // CONSTRUCTOR 2
+        public MainDashboard(string role)
         {
             InitializeComponent();
             currentUserRole = role;
@@ -35,25 +35,25 @@ namespace oops_lab_final_project_Front_End
         private void MainDashboard_Load(object sender, EventArgs e)
         {
             // --- ROLE MANAGEMENT LOGIC ---
+            // 1. Hide everything by default so nothing leaks
             btnmarketplace.Visible = false;
+            btnmyanimal.Visible = false;
+            
+            btnhistory.Visible = false;
+            btnsell.Visible = false; // Your original sell button hide logic is still here!
 
-            // In missing buttons ko humne poori tarah disable kar diya hai taake crash na ho
-            // btnManageInventory.Visible = false;
-            // btnviewsales.Visible = false;
-            // btnorderhistory.Visible = false;
-
-            btnsell.Visible = false; // Hide the Sell button by default
-
+            // 2. Show buttons based on role
             if (currentUserRole == "Seller")
             {
-                // btnManageInventory.Visible = true;
-                // btnviewsales.Visible = true;
-                btnsell.Visible = true; // Show it ONLY if they are a Seller
+                btnmyanimal.Visible = true;
+               
+                btnsell.Visible = true; // Show it ONLY if they are a Seller (Safe!)
+                btnmarketplace.Visible = true;
             }
             else if (currentUserRole == "Buyer")
             {
                 btnmarketplace.Visible = true;
-                // btnorderhistory.Visible = true;
+                btnhistory.Visible = true;
                 // Buyer does NOT get the Sell button
             }
         }
@@ -67,26 +67,26 @@ namespace oops_lab_final_project_Front_End
 
         private void btnInbox_Click(object sender, EventArgs e)
         {
-            // inboxsidepanel myInbox = new inboxsidepanel();
-            //  myInbox.Show();
-        }
+            // inboxsidepanel myInbox = new inboxsidepanel();
+            //  myInbox.Show();
+        }
 
         private void btninbox_Click_1(object sender, EventArgs e)
         {
-            //   inboxsidepanel myInbox = new inboxsidepanel();
-            //  myInbox.Show();
-        }
+            //   inboxsidepanel myInbox = new inboxsidepanel();
+            //  myInbox.Show();
+        }
 
-     
+
 
         private void button3_Click(object sender, EventArgs e)
         {
-            // Empty click event
-        }
+            // Empty click event
+        }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            // Empty click event
+           
         }
 
         private void btnmarketplace_Click(object sender, EventArgs e)
@@ -111,14 +111,32 @@ namespace oops_lab_final_project_Front_End
 
         private void btnsettings_Click(object sender, EventArgs e)
         {
-            // 1. Create the Settings page
-            SettingsProfileForm mySettings = new SettingsProfileForm();
+            // 1. Create the Settings page
+            SettingsProfileForm mySettings = new SettingsProfileForm();
 
-            // 2. Hand it the username (using a test name for now)
-            mySettings.LoggedInUsername = "TestUser";
+            // 2. Hand it the username (using a test name for now)
+            mySettings.LoggedInUsername = "TestUser";
 
-            // 3. Show the settings page
-            mySettings.Show();
+            // 3. Show the settings page
+            mySettings.Show();
+        }
+
+        private void btnhistory_Click(object sender, EventArgs e)
+        {
+            // 1. Create an instance of your order history form
+            orderhistory historyForm = new orderhistory();
+
+            // 2. Show it on screen
+            historyForm.Show();
+        }
+
+        private void btnmyanimal_Click(object sender, EventArgs e)
+        {
+            // 1. Create an instance of your inventory form
+            My_Inventry inventoryForm = new My_Inventry();
+
+            // 2. Show the page as a normal window!
+            inventoryForm.Show();
         }
     }
 }

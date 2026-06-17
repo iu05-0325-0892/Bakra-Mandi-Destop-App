@@ -124,6 +124,9 @@
   <data name="Goat Stack" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Goat Stack.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="market place logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\market place logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Cute baby goats sweet farm animals flowers leaves and goat spring summer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Cute baby goats sweet farm animals flowers leaves and goat spring summer.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -132,6 +135,9 @@
   </data>
   <data name="sidepanel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sidepanel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card121" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card121.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="(small scale) goats - farm animals - greige - LAD22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\(small scale) goats - farm animals - greige - LAD22.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,11 +148,14 @@
   <data name="forgot password page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\forgot password page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vvq11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vvq11.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="search-box" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search-box.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="market place logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\market place logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="goats goat goat goat breeds farm farm animals green" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\goats goat goat goat breeds farm farm animals green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goat-standing-on-an-old-royal-enfield-motorcycle-this-was-an-everyday-DTMXGN1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,14 +172,26 @@
   <data name="images (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images (1).jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="card" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ade31007-13ac-4321-afd3-504a0a12f000" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ade31007-13ac-4321-afd3-504a0a12f000.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="send-button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\send-button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo market" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\logo market.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="goats goat goat goat breeds farm farm animals green" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\goats goat goat goat breeds farm farm animals green.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="profile pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\profile pic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ade31007-13ac-4321-afd3-504a0a12f0001" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ade31007-13ac-4321-afd3-504a0a12f0001.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sidepanel111.png" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sidepanel111.png.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -178,14 +199,20 @@
   <data name="goat marketplace1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\goat marketplace1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="profile pic" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\profile pic.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="verify pass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\verify pass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="resigister page 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\resigister page 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alpine goat alpine goat alpine goat alpine goat floral goat farm farm1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alpine goat alpine goat alpine goat alpine goat floral goat farm farm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\alpine goat alpine goat alpine goat alpine goat floral goat farm farm.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="card1211" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\card1211.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="register page" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\register page.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -202,13 +229,19 @@
   <data name="64e730638b09aae07e746bb9bf378670" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\64e730638b09aae07e746bb9bf378670.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="resigister page 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\resigister page 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="creat acc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\creat acc.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="conpass" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\conpass.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="login page 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\login page 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="setting background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting background.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="my inventry" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\my inventry.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

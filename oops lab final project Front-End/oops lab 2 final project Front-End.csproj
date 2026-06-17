@@ -96,7 +96,19 @@
     <Compile Include="marketplacesidepanel.Designer.cs">
       <DependentUpon>marketplacesidepanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="My Inventry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Inventry.Designer.cs">
+      <DependentUpon>My Inventry.cs</DependentUpon>
+    </Compile>
     <Compile Include="obj\Debug\.NETFramework,Version=v4.7.2.AssemblyAttributes.cs" />
+    <Compile Include="orderhistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="orderhistory.Designer.cs">
+      <DependentUpon>orderhistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RegisterForm.cs">
@@ -136,6 +148,9 @@
     <EmbeddedResource Include="marketplacesidepanel.resx">
       <DependentUpon>marketplacesidepanel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="My Inventry.resx">
+      <DependentUpon>My Inventry.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.bakraListingCard.resources" />
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.confirmnewpasswordpage.resources" />
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.Forgotpasswordpage.resources" />
@@ -145,6 +160,9 @@
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.marketplacesidepanel.resources" />
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.Properties.Resources.resources" />
     <EmbeddedResource Include="obj\Debug\oops_lab_final_project_Front_End.RegisterForm.resources" />
+    <EmbeddedResource Include="orderhistory.resx">
+      <DependentUpon>orderhistory.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -281,6 +299,17 @@
     <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <Content Include="oops lab 2 final project Front-End.sln" />
     <Content Include="oops lab final project Front-End.sln" />
+    <None Include="Resources\my inventry.jpg" />
+    <None Include="Resources\card1211.jpg" />
+    <None Include="Resources\creat acc.jpg" />
+    <None Include="Resources\verify pass.jpg" />
+    <None Include="Resources\conpass.jpg" />
+    <None Include="Resources\card121.jpg" />
+    <None Include="Resources\card.jpg" />
+    <None Include="Resources\sidepanel111.png.jpg" />
+    <None Include="Resources\ade31007-13ac-4321-afd3-504a0a12f0001.jpg" />
+    <None Include="Resources\ade31007-13ac-4321-afd3-504a0a12f000.jpg" />
+    <None Include="Resources\vvq11.jpg" />
     <None Include="Resources\setting background.jpg" />
     <None Include="Resources\profile pic.jpg" />
   </ItemGroup>

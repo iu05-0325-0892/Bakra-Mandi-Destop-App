@@ -113,6 +113,26 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ade31007_13ac_4321_afd3_504a0a12f000 {
+            get {
+                object obj = ResourceManager.GetObject("ade31007-13ac-4321-afd3-504a0a12f000", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ade31007_13ac_4321_afd3_504a0a12f0001 {
+            get {
+                object obj = ResourceManager.GetObject("ade31007-13ac-4321-afd3-504a0a12f0001", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap alpine_goat_alpine_goat_alpine_goat_alpine_goat_floral_goat_farm_farm {
             get {
                 object obj = ResourceManager.GetObject("alpine goat alpine goat alpine goat alpine goat floral goat farm farm", resourceCulture);
@@ -133,9 +153,59 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap card {
+            get {
+                object obj = ResourceManager.GetObject("card", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap card121 {
+            get {
+                object obj = ResourceManager.GetObject("card121", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap card1211 {
+            get {
+                object obj = ResourceManager.GetObject("card1211", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap confrim_new_password_page {
             get {
                 object obj = ResourceManager.GetObject("confrim new password page", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap conpass {
+            get {
+                object obj = ResourceManager.GetObject("conpass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap creat_acc {
+            get {
+                object obj = ResourceManager.GetObject("creat acc", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -293,6 +363,16 @@ namespace oops_lab_final_project_Front_End.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap my_inventry {
+            get {
+                object obj = ResourceManager.GetObject("my inventry", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile_pic {
             get {
                 object obj = ResourceManager.GetObject("profile pic", resourceCulture);
@@ -366,6 +446,36 @@ namespace oops_lab_final_project_Front_End.Properties {
         internal static System.Drawing.Bitmap sidepanel {
             get {
                 object obj = ResourceManager.GetObject("sidepanel", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sidepanel111_png {
+            get {
+                object obj = ResourceManager.GetObject("sidepanel111.png", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap verify_pass {
+            get {
+                object obj = ResourceManager.GetObject("verify pass", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vvq11 {
+            get {
+                object obj = ResourceManager.GetObject("vvq11", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

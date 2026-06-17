@@ -106,7 +106,8 @@ namespace oops_lab_final_project_Front_End
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources._64e730638b09aae07e746bb9bf378670;
+            this.BackgroundImage = global::oops_lab_final_project_Front_End.Properties.Resources.card121;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.btnContact);
             this.Controls.Add(this.lblDetails);
             this.Controls.Add(this.lblLocation);
@@ -114,7 +115,9 @@ namespace oops_lab_final_project_Front_End
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.pictureBox1);
             this.Name = "bakraListingCard";
-            this.Size = new System.Drawing.Size(588, 135);
+            this.Size = new System.Drawing.Size(572, 131);
+            this.Load += new System.EventHandler(this.bakraListingCard_Load);
+            this.Click += new System.EventHandler(this.bakraListingCard_Click);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

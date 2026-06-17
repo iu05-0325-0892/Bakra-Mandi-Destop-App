@@ -39,11 +39,30 @@ namespace oops_lab_final_project_Front_End
 
         private void btnChangePassword_Click(object sender, EventArgs e)
         {
-            // 2. CHANGED THIS: It now passes the actual user's name instead of empty quotes!
-            confirmnewpasswordpage passwordForm = new confirmnewpasswordpage(LoggedInUsername);
+            // 1. Create an instance of the Forgotpasswordpage instead
+            Forgotpasswordpage forgotForm = new Forgotpasswordpage();
 
-            // Open it as a popup so the user has to deal with it before doing anything else
-            passwordForm.ShowDialog();
+            // 2. Open it as a popup window
+            forgotForm.ShowDialog();
+        }
+
+        // 🛠️ NEW ADDITION: Click on the profile image box to update it dynamically
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // 1. Open the computer's native file explorer dialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+
+            // 2. Limit the selection to standard image formats only
+            openFileDialog.Filter = "Image Files(*.jpg; *.jpeg; *.png; *.bmp)|*.jpg; *.jpeg; *.png; *.bmp";
+
+            // 3. If a user selects a file and hits open/confirm
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // 4. Instantiate a new Bitmap from the chosen path and assign it to your image block
+                pictureBox1.Image = new Bitmap(openFileDialog.FileName);
+
+                MessageBox.Show("Profile picture updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         private void SettingsProfileForm_Load(object sender, EventArgs e)
